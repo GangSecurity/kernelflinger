@@ -1351,6 +1351,8 @@ EFI_STATUS efi_main(EFI_HANDLE image, EFI_SYSTEM_TABLE *sys_table)
 
 	debug(L"Loading boot image");
 
+	testonly();
+
 	set_boottime_stamp(TM_AVB_START);
 	acpi_set_boot_target(boot_target);
 
